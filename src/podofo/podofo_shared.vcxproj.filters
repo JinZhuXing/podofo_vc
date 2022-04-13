@@ -596,9 +596,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\..\podofo-0.9.7\src\podofo\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="..\..\..\..\podofo-0.9.7\src\podofo\doc\podofo-doc.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>

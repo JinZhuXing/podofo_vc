@@ -6,9 +6,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\..\podofo-0.9.7\tools\podofoincrementalupdates\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{FB9A8F8B-7ABB-3CAC-97AF-38DCC72333A6}</UniqueIdentifier>
     </Filter>
