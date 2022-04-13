@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USING_SHARED_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -139,10 +139,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_SHARED_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -181,10 +181,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_SHARED_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -222,10 +222,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USING_SHARED_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Download\podofo\cmake\bin;F:\Download\podofo\podofo-0.9.7\src;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include;F:\Download\podofo\podofo-0.9.7\src\podofo;E:\Dev_Tools\VisualStudio\vcpkg\installed\x86-windows-static\include\freetype;F:\Download\podofo\podofo-0.9.7\vcincludes;F:\Download\podofo\podofo-0.9.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)src\podofo\;$(SolutionDir)third_party\include\;$(SolutionDir)third_party\include\freetype;$(SolutionDir)vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
