@@ -247,9 +247,9 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofopages\podofopages.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofopages\DeleteOperation.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofopages\MoveOperation.cpp" />
+    <ClCompile Include="podofopages.cpp" />
+    <ClCompile Include="DeleteOperation.cpp" />
+    <ClCompile Include="MoveOperation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Download\podofo\cmake\bin\ZERO_CHECK.vcxproj">

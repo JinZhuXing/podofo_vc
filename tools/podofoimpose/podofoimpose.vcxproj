@@ -247,10 +247,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\podofoimpose.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\pdftranslator.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\impositionplan.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\planreader_legacy.cpp" />
+    <ClCompile Include="podofoimpose.cpp" />
+    <ClCompile Include="pdftranslator.cpp" />
+    <ClCompile Include="impositionplan.cpp" />
+    <ClCompile Include="planreader_legacy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Download\podofo\cmake\bin\ZERO_CHECK.vcxproj">

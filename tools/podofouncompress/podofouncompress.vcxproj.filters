@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofouncompress\Uncompress.cpp">
+    <ClCompile Include="Uncompress.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofouncompress\podofouncompress.cpp">
+    <ClCompile Include="podofouncompress.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

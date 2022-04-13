@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\podofoimpose.cpp">
+    <ClCompile Include="podofoimpose.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\pdftranslator.cpp">
+    <ClCompile Include="pdftranslator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\impositionplan.cpp">
+    <ClCompile Include="impositionplan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimpose\planreader_legacy.cpp">
+    <ClCompile Include="planreader_legacy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

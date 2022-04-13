@@ -247,7 +247,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\test\SignatureTest\SignTest.cpp" />
+    <ClCompile Include="SignTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Download\podofo\cmake\bin\ZERO_CHECK.vcxproj">

@@ -247,13 +247,13 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\podofocolor.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\colorchanger.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\colorspace.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\graphicsstack.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\iconverter.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\dummyconverter.cpp" />
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofocolor\grayscaleconverter.cpp" />
+    <ClCompile Include="podofocolor.cpp" />
+    <ClCompile Include="colorchanger.cpp" />
+    <ClCompile Include="colorspace.cpp" />
+    <ClCompile Include="graphicsstack.cpp" />
+    <ClCompile Include="iconverter.cpp" />
+    <ClCompile Include="dummyconverter.cpp" />
+    <ClCompile Include="grayscaleconverter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Download\podofo\cmake\bin\ZERO_CHECK.vcxproj">

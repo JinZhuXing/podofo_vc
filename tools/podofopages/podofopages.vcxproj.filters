@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofopages\podofopages.cpp">
+    <ClCompile Include="podofopages.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofopages\DeleteOperation.cpp">
+    <ClCompile Include="DeleteOperation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofopages\MoveOperation.cpp">
+    <ClCompile Include="MoveOperation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

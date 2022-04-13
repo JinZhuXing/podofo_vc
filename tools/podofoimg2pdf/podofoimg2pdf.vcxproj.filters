@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimg2pdf\podofoimg2pdf.cpp">
+    <ClCompile Include="podofoimg2pdf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\podofo-0.9.7\tools\podofoimg2pdf\ImageConverter.cpp">
+    <ClCompile Include="ImageConverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
