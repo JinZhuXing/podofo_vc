@@ -196,7 +196,7 @@ PdfDate::PdfDate( const PdfString & sDate )
 
     strncpy(m_szDate,sDate.GetString(),PDF_DATE_BUFFER_SIZE);
 
-    struct tm _tm{};
+    struct tm _tm;
     _tm.tm_mday = 1;
 
     const char * pszDate = sDate.GetString();
