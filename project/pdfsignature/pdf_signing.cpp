@@ -1,6 +1,32 @@
 #include "pch.h"
 #include "pdf_signing.h"
 
+#include <cstddef>
+#include <memory>
+#include <type_traits>
+#include <utility>
+
+namespace std {
+    template<class T> struct _Unique_if {
+        typedef unique_ptr<T> _Single_object;
+    };
+
+    template<class T> struct _Unique_if<T[]> {
+        typedef unique_ptr<T[]> _Unknown_bound;
+    };
+
+    template<class T, size_t N> struct _Unique_if<T[N]> {
+        typedef void _Known_bound;
+    };
+
+    template<class T>
+    typename _Unique_if<T>::_Unknown_bound
+    make_unique(size_t n) {
+        typedef typename remove_extent<T>::type U;
+        return unique_ptr<T>(new U[n]());
+    }
+}
+
 struct Annot {
     double fLeft;
     double fTop;
