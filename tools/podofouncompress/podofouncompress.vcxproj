@@ -113,8 +113,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofouncompress/Debug/podofouncompress.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofouncompress/Debug/podofouncompress.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -155,8 +153,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofouncompress/Release/podofouncompress.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofouncompress/Release/podofouncompress.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -197,8 +193,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofouncompress/MinSizeRel/podofouncompress.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofouncompress/MinSizeRel/podofouncompress.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -238,8 +232,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofouncompress/RelWithDebInfo/podofouncompress.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofouncompress/RelWithDebInfo/podofouncompress.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>

@@ -113,8 +113,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/Debug/podofotxt2pdf.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/Debug/podofotxt2pdf.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -155,8 +153,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/Release/podofotxt2pdf.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/Release/podofotxt2pdf.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -197,8 +193,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/MinSizeRel/podofotxt2pdf.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/MinSizeRel/podofotxt2pdf.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -238,8 +232,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/RelWithDebInfo/podofotxt2pdf.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofotxt2pdf/RelWithDebInfo/podofotxt2pdf.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>

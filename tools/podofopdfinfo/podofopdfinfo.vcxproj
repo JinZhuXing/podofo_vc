@@ -113,8 +113,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/Debug/podofopdfinfo.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/Debug/podofopdfinfo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -155,8 +153,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/Release/podofopdfinfo.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/Release/podofopdfinfo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -197,8 +193,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/MinSizeRel/podofopdfinfo.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/MinSizeRel/podofopdfinfo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -238,8 +232,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/RelWithDebInfo/podofopdfinfo.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofopdfinfo/RelWithDebInfo/podofopdfinfo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>

@@ -113,8 +113,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofoimgextract/Debug/podofoimgextract.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofoimgextract/Debug/podofoimgextract.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -155,8 +153,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofoimgextract/Release/podofoimgextract.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofoimgextract/Release/podofoimgextract.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -197,8 +193,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofoimgextract/MinSizeRel/podofoimgextract.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofoimgextract/MinSizeRel/podofoimgextract.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -238,8 +232,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/tools/podofoimgextract/RelWithDebInfo/podofoimgextract.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/tools/podofoimgextract/RelWithDebInfo/podofoimgextract.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>

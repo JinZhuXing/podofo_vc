@@ -113,8 +113,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/test/WatermarkTest/Debug/WatermarkTest.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/test/WatermarkTest/Debug/WatermarkTest.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -155,8 +153,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/test/WatermarkTest/Release/WatermarkTest.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/test/WatermarkTest/Release/WatermarkTest.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -197,8 +193,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/test/WatermarkTest/MinSizeRel/WatermarkTest.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/test/WatermarkTest/MinSizeRel/WatermarkTest.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -238,8 +232,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/Download/podofo/cmake/bin/test/WatermarkTest/RelWithDebInfo/WatermarkTest.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/Download/podofo/cmake/bin/test/WatermarkTest/RelWithDebInfo/WatermarkTest.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
