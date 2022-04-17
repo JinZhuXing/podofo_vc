@@ -1,5 +1,7 @@
 # podofo_vc
 
+[![license](https://img.shields.io/badge/license-AGPL%20V3-blue)](https://github.com/JinZhuXing/podofo_vc/blob/main/LICENSE)
+
 PoDoFo library for windows using Visual Studio 2010.
 
 This project was restructured for Visual Studio developer.
