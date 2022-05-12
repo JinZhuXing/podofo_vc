@@ -257,7 +257,7 @@ void PdfInputDevice::Seek( std::streamoff off, std::ios_base::seekdir dir )
             else // if( dir == std::ios_base::end )
                 whence = SEEK_END;
             
-            if( fseeko( m_pFile, off, whence ) == -1)
+            if( fseeko( m_pFile, (long)off, whence ) == -1)
             {
                 PODOFO_RAISE_ERROR_INFO( ePdfError_InvalidDeviceOperation, "Failed to seek to given position in the file" );
             }
@@ -278,7 +278,7 @@ std::streamoff PdfInputDevice::Read( char* pBuffer, std::streamsize lLen )
 	}
 	else 
 	{
-		return fread(pBuffer, 1, lLen, m_pFile);
+		return fread(pBuffer, 1, (size_t)lLen, m_pFile);
 	}
 }
 

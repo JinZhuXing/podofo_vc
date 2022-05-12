@@ -479,12 +479,12 @@ void PdfImage::LoadFromTiffHandle(void* hInHandle) {
     
     TIFF* hInTiffHandle = (TIFF*)hInHandle;
     
-    int32 row, width, height;
-    uint16 samplesPerPixel, bitsPerSample;
-    uint16* sampleInfo;
-    uint16 extraSamples;
-    uint16 planarConfig, photoMetric, orientation;
-    int32 resolutionUnit;
+    int32_t row, width, height;
+    uint16_t samplesPerPixel, bitsPerSample;
+    uint16_t* sampleInfo;
+    uint16_t extraSamples;
+    uint16_t planarConfig, photoMetric, orientation;
+    int32_t resolutionUnit;
     
     TIFFGetField(hInTiffHandle,	   TIFFTAG_IMAGEWIDTH,		&width);
     TIFFGetField(hInTiffHandle,	   TIFFTAG_IMAGELENGTH,		&height);
@@ -596,9 +596,9 @@ void PdfImage::LoadFromTiffHandle(void* hInHandle) {
             decode.insert( decode.end(), PdfVariant( static_cast<pdf_int64>(numColors-1) ) );
             this->GetObject()->GetDictionary().AddKey( PdfName("Decode"), decode );
             
-            uint16 * rgbRed;
-            uint16 * rgbGreen;
-            uint16 * rgbBlue;
+            uint16_t * rgbRed;
+            uint16_t * rgbGreen;
+            uint16_t * rgbBlue;
             TIFFGetField(hInTiffHandle, TIFFTAG_COLORMAP, &rgbRed, &rgbGreen, &rgbBlue);
             
             char *datap = new char[numColors*3];
@@ -633,7 +633,7 @@ void PdfImage::LoadFromTiffHandle(void* hInHandle) {
             break;
     }
     
-    int32 scanlineSize = TIFFScanlineSize(hInTiffHandle);
+    int32_t scanlineSize = TIFFScanlineSize(hInTiffHandle);
     long bufferSize = scanlineSize * height;
     char *buffer = new char[bufferSize];
     if( !buffer )
@@ -722,8 +722,8 @@ struct tiffData
         tsize_t bytesRead = 0;
         if (length > _size - static_cast<tsize_t>(_pos))
         {
-            memcpy(data, &_data[_pos], _size - _pos);
-            bytesRead = _size - _pos;
+            memcpy(data, &_data[_pos], (size_t)(_size - _pos));
+            bytesRead = (tsize_t)(_size - _pos);
             _pos = _size;
         }
         else

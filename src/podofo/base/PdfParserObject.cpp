@@ -62,7 +62,7 @@ PdfParserObject::PdfParserObject( PdfVecObjects* pCreator, const PdfRefCountedIn
 
     InitPdfParserObject();
 
-    m_lOffset = lOffset == -1 ? m_device.Device()->Tell() : lOffset;
+    m_lOffset = lOffset == -1 ? (pdf_long)m_device.Device()->Tell() : lOffset;
 }
 
 PdfParserObject::PdfParserObject( const PdfRefCountedBuffer & rBuffer )
@@ -140,7 +140,7 @@ void PdfParserObject::ParseFile( PdfEncrypt* pEncrypt, bool bIsTrailer )
               << endl;
 #endif // PODOFO_VERBOSE_DEBUG
 
-    m_lOffset    = m_device.Device()->Tell();
+    m_lOffset    = (pdf_long)m_device.Device()->Tell();
     m_pEncrypt   = pEncrypt;
     m_bIsTrailer = bIsTrailer;
 
@@ -217,7 +217,7 @@ void PdfParserObject::ParseFileComplete( bool bIsTrailer )
             else if( this->IsDictionary() && strncmp( pszToken, "stream", s_nLenStream ) == 0 )
             {
                 m_bStream = true;
-                m_lStreamOffset = m_device.Device()->Tell(); // NOTE: whitespace after "stream" handle in stream parser!
+                m_lStreamOffset = (pdf_long)m_device.Device()->Tell(); // NOTE: whitespace after "stream" handle in stream parser!
                 
                 // Most of the code relies on PdfObjects that are dictionaries
                 // to have the datatype ePdfDataType_Dictionary and not Stream.
@@ -286,7 +286,7 @@ void PdfParserObject::ParseStream()
         }
     } 
 
-    pdf_long fLoc = m_device.Device()->Tell();	// we need to save this, since loading the Length key could disturb it!
+    pdf_long fLoc = (pdf_long)m_device.Device()->Tell();	// we need to save this, since loading the Length key could disturb it!
 
     PdfObject* pObj = this->GetDictionary_NoDL().GetKey( PdfName::KeyLength );  
     if( pObj && pObj->IsNumber() )

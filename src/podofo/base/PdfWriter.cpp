@@ -257,7 +257,7 @@ void PdfWriter::WriteUpdate( PdfOutputDevice* pDevice, PdfInputDevice* pSourceIn
 
                 didRead = pSourceInputDevice->Read( pBuffer, uBufferLen );
                 if( didRead > 0)
-                    pDevice->Write( pBuffer, didRead );
+                    pDevice->Write( pBuffer, (size_t)didRead );
             }
 
             podofo_free( pBuffer );
