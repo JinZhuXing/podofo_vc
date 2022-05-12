@@ -237,18 +237,6 @@
   <ItemGroup>
     <ClCompile Include="podofogc.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="F:\Download\podofo\cmake\bin\ZERO_CHECK.vcxproj">
-      <Project>{1C19EDDB-C32A-36C1-AB0F-3374EAD5E1A0}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="F:\Download\podofo\cmake\bin\src\podofo\podofo_shared.vcxproj">
-      <Project>{024903D7-ECA4-3512-BAC3-B5AFA58A0B57}</Project>
-      <Name>podofo_shared</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

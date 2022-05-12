@@ -261,7 +261,7 @@ void PdfParser::ReadDocumentStructure()
     
     // position at the end of the file to search the xref table.
     m_device.Device()->Seek( 0, std::ios_base::end );
-    m_nFileSize = m_device.Device()->Tell();
+    m_nFileSize = (size_t)m_device.Device()->Tell();
 
 // James McGill 18.02.2011, validate the eof marker and when not in strict mode accept garbage after it
     try {
@@ -435,7 +435,7 @@ void PdfParser::HasLinearizationDict()
 
     // avoid moving to a negative file position here
     m_device.Device()->Seek( (static_cast<pdf_long>(lXRef-PDF_XREF_BUF) > 0 ? static_cast<pdf_long>(lXRef-PDF_XREF_BUF) : PDF_XREF_BUF) );
-    m_nXRefLinearizedOffset = m_device.Device()->Tell();
+    m_nXRefLinearizedOffset = (pdf_long)m_device.Device()->Tell();
 
     if( m_device.Device()->Read( m_buffer.GetBuffer(), PDF_XREF_BUF ) != PDF_XREF_BUF )
     {
@@ -656,7 +656,7 @@ void PdfParser::ReadXRefContents( pdf_long lOffset, bool bPositionAtEnd )
     }
     
     
-    size_t curPosition = m_device.Device()->Tell();
+    size_t curPosition = (size_t)m_device.Device()->Tell();
     m_device.Device()->Seek(0,std::ios_base::end);
     std::streamoff fileSize = m_device.Device()->Tell();
     m_device.Device()->Seek(curPosition,std::ios_base::beg);
@@ -666,12 +666,12 @@ void PdfParser::ReadXRefContents( pdf_long lOffset, bool bPositionAtEnd )
         // Invalid "startxref" Peter Petrov 23 December 2008
 		 // ignore returned value and get offset from the device
         ReadXRef( &lOffset );
-        lOffset = m_device.Device()->Tell();
+        lOffset = (pdf_long)m_device.Device()->Tell();
         // TODO: hard coded value "4"
         m_buffer.Resize(PDF_XREF_BUF*4);
         FindToken2("xref", PDF_XREF_BUF*4,lOffset);
         m_buffer.Resize(PDF_XREF_BUF);
-        lOffset = m_device.Device()->Tell();
+        lOffset = (pdf_long)m_device.Device()->Tell();
         m_nXRefOffset = lOffset;
     }
     else
@@ -812,7 +812,7 @@ void PdfParser::ReadXRefSubsection( pdf_int64 & nFirstObject, pdf_int64 & nNumOb
 #else
                 m_nNumObjects = nFirstObject + nNumObjects;
 #endif // _WIN32
-                ResizeOffsets(nFirstObject + nNumObjects);
+                ResizeOffsets((pdf_long)(nFirstObject + nNumObjects));
 
             } catch (std::exception &) {
                 // If m_nNumObjects*sizeof(TXRefEntry) > std::numeric_limits<size_t>::max() then
@@ -1467,7 +1467,7 @@ void PdfParser::CheckEOFMarker()
     else
     {
         // Search for the Marker from the end of the file
-        pdf_long lCurrentPos =  m_device.Device()->Tell();
+        pdf_long lCurrentPos = (pdf_long)m_device.Device()->Tell();
         bool bFound = false;
         while (lCurrentPos>=0)
         {
@@ -1488,7 +1488,7 @@ void PdfParser::CheckEOFMarker()
 
         // Try and deal with garbage by offsetting the buffer reads in PdfParser from now on
         if (bFound)
-            m_lLastEOFOffset = (m_nFileSize - (m_device.Device()->Tell()-1)) + nEOFTokenLen;
+            m_lLastEOFOffset = (pdf_long)((m_nFileSize - (m_device.Device()->Tell()-1)) + nEOFTokenLen);
         else
             PODOFO_RAISE_ERROR( ePdfError_NoEOFToken );
     }
