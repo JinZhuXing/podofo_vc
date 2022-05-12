@@ -116,7 +116,7 @@ int PlanReader_Legacy::sortLoop(std::vector<std::string>& memfile, int numline)
 			endOfloopBlock = bolb2 + 1;		
 	}
 
-	int maxIter(PoDoFo::Impose::PageRecord::calc(iterN, I->vars));
+	int maxIter((int)(PoDoFo::Impose::PageRecord::calc(iterN, I->vars)));
 	for(int iter(0); iter < maxIter ; ++iter )
 	{
 		if(iter != 0)
@@ -216,9 +216,9 @@ PlanReader_Legacy::PlanReader_Legacy(const std::string & plan, PoDoFo::Impose::I
 	}
 	while(!in.eof());
 	/// PROVIDED 
-	I->vars[std::string("$PagesCount")] = PoDoFo::Impose::Util::iToStr( I->sourceVars.PageCount );
-	I->vars[std::string("$SourceWidth")] = PoDoFo::Impose::Util::dToStr( I->sourceVars.PageWidth );
-	I->vars[std::string("$SourceHeight")] = PoDoFo::Impose::Util::dToStr( I->sourceVars.PageHeight );
+	I->vars[std::string("$PagesCount")] = PoDoFo::Impose::Util::iToStr( (int)(I->sourceVars.PageCount) );
+	I->vars[std::string("$SourceWidth")] = PoDoFo::Impose::Util::dToStr( (int)(I->sourceVars.PageWidth) );
+	I->vars[std::string("$SourceHeight")] = PoDoFo::Impose::Util::dToStr( (int)(I->sourceVars.PageHeight) );
 	/// END OF PROVIDED
 	
 	for( unsigned int numline = 0; numline < memfile.size() ; ++numline)

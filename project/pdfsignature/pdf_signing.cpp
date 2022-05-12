@@ -59,7 +59,6 @@ void draw_annot(PdfDocument& document, PdfPainter& painter, const Annot& annot, 
     PdfColor font_color(0.0, 0.0, 0.0);
     const char* font_name = "Helvetica";
     bool bUpdateFont = true;
-    int ii;
 
     double fLeft = annot.fLeft;
     double fTop = annot.fTop;
@@ -79,7 +78,7 @@ void draw_annot(PdfDocument& document, PdfPainter& painter, const Annot& annot, 
             PODOFO_RAISE_ERROR_INFO(ePdfError_OutOfMemory, err.c_str());
         }
 
-        pFont->SetFontSize(font_size);
+        pFont->SetFontSize((float)font_size);
         painter.SetFont(pFont);
         painter.SetColor(font_color);
     }
@@ -128,7 +127,6 @@ static void raise_podofo_error_with_opensslerror(const char* detail)
 void sign_with_signer(PdfSignOutputDevice* signer, EVP_PKEY *pkey, X509* cert) {
     int len;
     auto buff = std::make_unique<char[]>(65565);
-    size_t sig_len;
     char* out_buff = nullptr;
     long out_len;
 
@@ -268,7 +266,6 @@ static PdfObject* find_existing_signature_field(PdfAcroForm* pAcroForm, const Pd
 }
 
 int SignPdf(std::string _input_file, std::string cert_file, std::string key_file, keytype key_type) {
-    PdfPage* pPage;
     /*
     if (argc != 2)
     {
@@ -297,7 +294,6 @@ int SignPdf(std::string _input_file, std::string cert_file, std::string key_file
     double annot_left = 00, annot_top = 0, annot_width = 150.0, annot_height = 100.0;
     bool annot_print = true;
     bool field_use_existing = false;
-    int ii;
     int result = 0;
     int pos = 0;
 
@@ -427,7 +423,7 @@ int SignPdf(std::string _input_file, std::string cert_file, std::string key_file
 
                     pSignField->SetAppearanceStream(&sigXObject);
                 }
-                catch (PdfError& e)
+                catch (PdfError& /*e*/)
                 {
                     if (painter.GetPage())
                     {

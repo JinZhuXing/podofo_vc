@@ -89,7 +89,7 @@ bool write_to_disk(EVP_PKEY* pkey, X509* x509) {
     }
 
     /* Write the key to disk. */
-    bool ret = PEM_write_PKCS8PrivateKey(pkey_file, pkey, nullptr, nullptr, 0, NULL, NULL);
+    int ret = PEM_write_PKCS8PrivateKey(pkey_file, pkey, nullptr, nullptr, 0, NULL, NULL);
     fclose(pkey_file);
 
     if (!ret) {
@@ -122,7 +122,8 @@ EVP_PKEY *LoadKey(const char* pkey_file) {
         throw std::invalid_argument("No input file");
     }
 
-    FILE* fp = fopen(pkey_file, "r");
+    FILE* fp = NULL;
+	fopen_s(&fp, pkey_file, "r");
     key = PEM_read_PrivateKey(fp, nullptr, nullptr, nullptr);
     if (key == nullptr) {
         throw std::invalid_argument("Cannot read the key file");
@@ -137,7 +138,8 @@ X509* LoadCert(const char* cert_file) {
         throw std::invalid_argument("No input file");
     }
 
-    FILE* fp = fopen(cert_file, "r");
+    FILE* fp;
+	fopen_s(&fp, cert_file, "r");
     x509 = PEM_read_X509(fp, nullptr, nullptr, nullptr);
     return x509;
 }

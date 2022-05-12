@@ -111,7 +111,7 @@ namespace PoDoFo
 					if ( !in.getline ( filenameBuffer, 1000 ) )
 						throw runtime_error ( "failed reading line from input file" );
 
-					std::string ts ( filenameBuffer, in.gcount() );
+					std::string ts ( filenameBuffer, (unsigned int)in.gcount() );
 					if ( ts.size() > 4 ) // at least ".pdf" because just test if ts is empty doesn't work.
 					{
 						multiSource.push_back ( ts );

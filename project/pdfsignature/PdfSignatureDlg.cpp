@@ -2,7 +2,6 @@
 // PdfSignatureDlg.cpp : implementation file
 //
 
-#include <string>
 #include "pch.h"
 #include "framework.h"
 #include "PdfSignature.h"
@@ -298,7 +297,6 @@ void CPdfSignatureDlg::OnBnClickedButton4()
 	CString cert_file;
 	CString key_file;
 	CString input_file;
-	char buf[1024];
 	// TODO: Add your control notification handler code here
 
 	keytype key_type = RSA_key;
@@ -312,7 +310,7 @@ void CPdfSignatureDlg::OnBnClickedButton4()
 		try {
 			SignPdf(file_temp, "", "", key_type);
 		}
-		catch (PdfError& e) {
+		catch (PdfError& /*e*/) {
 			MessageBox(L"An error when processing pdf");
 			return;
 		}
@@ -334,7 +332,7 @@ void CPdfSignatureDlg::OnBnClickedButton4()
 	try {
 		SignPdf(file_temp, cert_temp, key_temp, key_type);
 	}
-	catch (PdfError& e) {
+	catch (PdfError& /*e*/) {
 		MessageBox(L"An error when processing pdf");
 		return;
 	}
