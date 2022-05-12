@@ -104,10 +104,10 @@ class PODOFO_API PdfTokenizer {
         static int s_maxRecursionDepth;
 
     #if defined(PODOFO_MULTI_THREAD)
-        static thread_local int s_nRecursionDepth; // PoDoFo is multi-threaded and requires a C++11 compiler with thread_local support
+        static /*thread_local*/ int s_nRecursionDepth; // PoDoFo is multi-threaded and requires a C++11 compiler with thread_local support
     #else
         static int s_nRecursionDepth; // PoDoFo is single-threaded
-    #endif    
+    #endif
     };    
 
     /** Reads the next token from the current file position

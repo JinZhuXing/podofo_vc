@@ -75,7 +75,7 @@ const int maxRecursionDepthDefault = 256;
 int PdfTokenizer::RecursionGuard::s_maxRecursionDepth = maxRecursionDepthDefault;
 
 #if defined(PODOFO_MULTI_THREAD)
-thread_local int PdfTokenizer::RecursionGuard::s_nRecursionDepth = 0; // PoDoFo is multi-threaded and requires a C++11 compiler with thread_local support
+/*thread_local*/ int PdfTokenizer::RecursionGuard::s_nRecursionDepth = 0; // PoDoFo is multi-threaded and requires a C++11 compiler with thread_local support
 #else
 int PdfTokenizer::RecursionGuard::s_nRecursionDepth = 0; // PoDoFo is single-threaded
 #endif   
