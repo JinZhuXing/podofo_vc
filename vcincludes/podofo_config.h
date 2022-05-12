@@ -10,7 +10,7 @@
 
 #define PODOFO_VERSION_MAJOR 0
 #define PODOFO_VERSION_MINOR 9
-#define PODOFO_VERSION_PATCH 7
+#define PODOFO_VERSION_PATCH 8
 
 /* PoDoFo configuration options */
 #define PODOFO_MULTI_THREAD
